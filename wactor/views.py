@@ -8,12 +8,7 @@ from django.shortcuts import render
 from bs4 import BeautifulSoup
 # from requests_futures.sessions import FuturesSession as async
 
-import simplejson
-import wikipedia
-import grequests
 import requests
-import random
-import json
 import sys
 import re
 import os
