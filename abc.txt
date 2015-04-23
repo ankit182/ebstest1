@@ -1,0 +1,392 @@
+INFO: requestEnvironmentInfo is starting.
+INFO: [Instance: i-93c15265] Successfully finished tailing 7 log(s)
+================ i-93c15265 =================
+-------------------------------------
+/var/log/eb-version-deployment.log
+-------------------------------------
+2015-04-23 11:07:01,061 [INFO] Found the latest version manifest file <Key: elasticbeanstalk-us-west-2-669447555868,resources/environments/e-trm2ywidx4/_runtime/versions/manifest_1429787070554> from bucket elasticbeanstalk-us-west-2-669447555868 and prefix resources/environments/e-trm2ywidx4/_runtime/versions/
+2015-04-23 11:07:01,118 [INFO] Downloaded the manifest file to /tmp/version_file_manifest
+2015-04-23 11:07:01,192 [INFO] Downloaded version label d0dd from s3 key <Key: elasticbeanstalk-us-west-2-669447555868,resources/environments/e-trm2ywidx4/_runtime/_versions/ebstest/d0dd>
+2015-04-23 11:32:33,451 [INFO] Version manifest file name already known. The latest version manifest file key is resources/environments/e-trm2ywidx4/_runtime/versions/manifest_1429788749280
+2015-04-23 11:32:33,523 [INFO] Downloaded the manifest file to /tmp/version_file_manifest
+2015-04-23 11:32:33,605 [INFO] Downloaded version label 660a from s3 key <Key: elasticbeanstalk-us-west-2-669447555868,resources/environments/e-trm2ywidx4/_runtime/_versions/ebstest/660a>
+2015-04-23 11:44:08,605 [INFO] Version manifest file name already known. The latest version manifest file key is resources/environments/e-trm2ywidx4/_runtime/versions/manifest_1429789444519
+2015-04-23 11:44:08,684 [INFO] Downloaded the manifest file to /tmp/version_file_manifest
+2015-04-23 11:44:08,767 [INFO] Downloaded version label 30ee from s3 key <Key: elasticbeanstalk-us-west-2-669447555868,resources/environments/e-trm2ywidx4/_runtime/_versions/ebstest/30ee>
+2015-04-23 12:14:29,579 [INFO] Version manifest file name already known. The latest version manifest file key is resources/environments/e-trm2ywidx4/_runtime/versions/manifest_1429791242887
+2015-04-23 12:14:29,659 [INFO] Downloaded the manifest file to /tmp/version_file_manifest
+2015-04-23 12:14:29,741 [INFO] Downloaded version label 96d7 from s3 key <Key: elasticbeanstalk-us-west-2-669447555868,resources/environments/e-trm2ywidx4/_runtime/_versions/ebstest/96d7>
+
+
+
+-------------------------------------
+/opt/python/log/httpd.out
+-------------------------------------
+[Thu Apr 23 11:07:45.326909 2015] [so:warn] [pid 1685] AH01574: module wsgi_module is already loaded, skipping
+[Thu Apr 23 11:32:44.227883 2015] [so:warn] [pid 2092] AH01574: module wsgi_module is already loaded, skipping
+[Thu Apr 23 11:44:19.404946 2015] [so:warn] [pid 2335] AH01574: module wsgi_module is already loaded, skipping
+[Thu Apr 23 12:14:40.168147 2015] [so:warn] [pid 2767] AH01574: module wsgi_module is already loaded, skipping
+
+
+
+-------------------------------------
+/var/log/httpd/error_log
+-------------------------------------
+[Thu Apr 23 11:07:08.975993 2015] [suexec:notice] [pid 1543] AH01232: suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+[Thu Apr 23 11:07:08.999206 2015] [auth_digest:notice] [pid 1543] AH01757: generating secret for digest authentication ...
+[Thu Apr 23 11:07:09.000264 2015] [lbmethod_heartbeat:notice] [pid 1543] AH02282: No slotmem from mod_heartmonitor
+[Thu Apr 23 11:07:09.045270 2015] [mpm_prefork:notice] [pid 1543] AH00163: Apache/2.4.12 (Amazon) mod_wsgi/3.5 Python/2.7.9 configured -- resuming normal operations
+[Thu Apr 23 11:07:09.045333 2015] [core:notice] [pid 1543] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+[Thu Apr 23 11:07:44.230569 2015] [mpm_prefork:notice] [pid 1543] AH00169: caught SIGTERM, shutting down
+[Thu Apr 23 11:07:45.333559 2015] [suexec:notice] [pid 1685] AH01232: suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+[Thu Apr 23 11:07:45.354430 2015] [so:warn] [pid 1685] AH01574: module wsgi_module is already loaded, skipping
+[Thu Apr 23 11:07:45.356470 2015] [auth_digest:notice] [pid 1685] AH01757: generating secret for digest authentication ...
+[Thu Apr 23 11:07:45.357544 2015] [lbmethod_heartbeat:notice] [pid 1685] AH02282: No slotmem from mod_heartmonitor
+[Thu Apr 23 11:07:45.389268 2015] [mpm_prefork:notice] [pid 1685] AH00163: Apache/2.4.12 (Amazon) mod_wsgi/3.5 Python/2.7.9 configured -- resuming normal operations
+[Thu Apr 23 11:07:45.389335 2015] [core:notice] [pid 1685] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+[Thu Apr 23 11:07:48.046409 2015] [:error] [pid 1688] [client 127.0.0.1:33884] Target WSGI script not found or unable to stat: /opt/python/current/app/application.py
+[Thu Apr 23 11:14:05.079093 2015] [:error] [pid 1687] [client 172.31.28.124:31562] Target WSGI script not found or unable to stat: /opt/python/current/app/application.py
+[Thu Apr 23 11:25:01.352200 2015] [:error] [pid 1687] [client 172.31.28.124:31757] Target WSGI script not found or unable to stat: /opt/python/current/app/application.py
+[Thu Apr 23 11:27:35.092989 2015] [:error] [pid 1773] [client 172.31.28.124:31815] Target WSGI script not found or unable to stat: /opt/python/current/app/application.py
+[Thu Apr 23 11:31:11.755913 2015] [:error] [pid 1687] [client 172.31.8.233:39053] Target WSGI script not found or unable to stat: /opt/python/current/app/application.py
+[Thu Apr 23 11:31:13.825513 2015] [:error] [pid 1687] [client 172.31.8.233:39053] Target WSGI script not found or unable to stat: /opt/python/current/app/application.py, referer: http://ebstest-dev3.elasticbeanstalk.com/
+[Thu Apr 23 11:32:43.131167 2015] [mpm_prefork:notice] [pid 1685] AH00169: caught SIGTERM, shutting down
+[Thu Apr 23 11:32:44.236050 2015] [suexec:notice] [pid 2092] AH01232: suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+[Thu Apr 23 11:32:44.257236 2015] [so:warn] [pid 2092] AH01574: module wsgi_module is already loaded, skipping
+[Thu Apr 23 11:32:44.259222 2015] [auth_digest:notice] [pid 2092] AH01757: generating secret for digest authentication ...
+[Thu Apr 23 11:32:44.260253 2015] [lbmethod_heartbeat:notice] [pid 2092] AH02282: No slotmem from mod_heartmonitor
+[Thu Apr 23 11:32:44.290411 2015] [mpm_prefork:notice] [pid 2092] AH00163: Apache/2.4.12 (Amazon) mod_wsgi/3.5 Python/2.7.9 configured -- resuming normal operations
+[Thu Apr 23 11:32:44.290467 2015] [core:notice] [pid 2092] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+[Thu Apr 23 11:32:46.948959 2015] [:error] [pid 2095] [client 127.0.0.1:34021] Target WSGI script not found or unable to stat: /opt/python/current/app/application.py
+[Thu Apr 23 11:44:18.308596 2015] [mpm_prefork:notice] [pid 2092] AH00169: caught SIGTERM, shutting down
+[Thu Apr 23 11:44:19.411562 2015] [suexec:notice] [pid 2335] AH01232: suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+[Thu Apr 23 11:44:19.432600 2015] [so:warn] [pid 2335] AH01574: module wsgi_module is already loaded, skipping
+[Thu Apr 23 11:44:19.434697 2015] [auth_digest:notice] [pid 2335] AH01757: generating secret for digest authentication ...
+[Thu Apr 23 11:44:19.435730 2015] [lbmethod_heartbeat:notice] [pid 2335] AH02282: No slotmem from mod_heartmonitor
+[Thu Apr 23 11:44:19.464073 2015] [mpm_prefork:notice] [pid 2335] AH00163: Apache/2.4.12 (Amazon) mod_wsgi/3.5 Python/2.7.9 configured -- resuming normal operations
+[Thu Apr 23 11:44:19.464132 2015] [core:notice] [pid 2335] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+[Thu Apr 23 11:44:22.129422 2015] [:error] [pid 2337] [client 127.0.0.1:34087] Target WSGI script not found or unable to stat: /opt/python/current/app/application.py
+[Thu Apr 23 12:14:39.071897 2015] [mpm_prefork:notice] [pid 2335] AH00169: caught SIGTERM, shutting down
+[Thu Apr 23 12:14:40.176524 2015] [suexec:notice] [pid 2767] AH01232: suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+[Thu Apr 23 12:14:40.197551 2015] [so:warn] [pid 2767] AH01574: module wsgi_module is already loaded, skipping
+[Thu Apr 23 12:14:40.199484 2015] [auth_digest:notice] [pid 2767] AH01757: generating secret for digest authentication ...
+[Thu Apr 23 12:14:40.200516 2015] [lbmethod_heartbeat:notice] [pid 2767] AH02282: No slotmem from mod_heartmonitor
+[Thu Apr 23 12:14:40.230408 2015] [mpm_prefork:notice] [pid 2767] AH00163: Apache/2.4.12 (Amazon) mod_wsgi/3.5 Python/2.7.9 configured -- resuming normal operations
+[Thu Apr 23 12:14:40.230468 2015] [core:notice] [pid 2767] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+[Thu Apr 23 12:14:42.905648 2015] [:error] [pid 2768] [remote 127.0.0.1:37434] mod_wsgi (pid=2768): Target WSGI script '/opt/python/current/app/wactor/wsgi.py' cannot be loaded as Python module.
+[Thu Apr 23 12:14:42.905769 2015] [:error] [pid 2768] [remote 127.0.0.1:37434] mod_wsgi (pid=2768): Exception occurred processing WSGI script '/opt/python/current/app/wactor/wsgi.py'.
+[Thu Apr 23 12:14:42.906131 2015] [:error] [pid 2768] [remote 127.0.0.1:37434] Traceback (most recent call last):
+[Thu Apr 23 12:14:42.906175 2015] [:error] [pid 2768] [remote 127.0.0.1:37434]   File "/opt/python/current/app/wactor/wsgi.py", line 13, in <module>
+[Thu Apr 23 12:14:42.906289 2015] [:error] [pid 2768] [remote 127.0.0.1:37434]     from django.core.wsgi import get_wsgi_application
+[Thu Apr 23 12:14:42.906323 2015] [:error] [pid 2768] [remote 127.0.0.1:37434] ImportError: No module named django.core.wsgi
+[Thu Apr 23 12:17:39.196905 2015] [:error] [pid 2768] [remote 172.31.8.233:0] mod_wsgi (pid=2768): Target WSGI script '/opt/python/current/app/wactor/wsgi.py' cannot be loaded as Python module.
+[Thu Apr 23 12:17:39.196975 2015] [:error] [pid 2768] [remote 172.31.8.233:0] mod_wsgi (pid=2768): Exception occurred processing WSGI script '/opt/python/current/app/wactor/wsgi.py'.
+[Thu Apr 23 12:17:39.197013 2015] [:error] [pid 2768] [remote 172.31.8.233:0] Traceback (most recent call last):
+[Thu Apr 23 12:17:39.197062 2015] [:error] [pid 2768] [remote 172.31.8.233:0]   File "/opt/python/current/app/wactor/wsgi.py", line 13, in <module>
+[Thu Apr 23 12:17:39.197133 2015] [:error] [pid 2768] [remote 172.31.8.233:0]     from django.core.wsgi import get_wsgi_application
+[Thu Apr 23 12:17:39.197171 2015] [:error] [pid 2768] [remote 172.31.8.233:0] ImportError: No module named django.core.wsgi
+[Thu Apr 23 12:17:56.731255 2015] [:error] [pid 2768] [remote 172.31.8.233:0] mod_wsgi (pid=2768): Target WSGI script '/opt/python/current/app/wactor/wsgi.py' cannot be loaded as Python module.
+[Thu Apr 23 12:17:56.731310 2015] [:error] [pid 2768] [remote 172.31.8.233:0] mod_wsgi (pid=2768): Exception occurred processing WSGI script '/opt/python/current/app/wactor/wsgi.py'.
+[Thu Apr 23 12:17:56.731348 2015] [:error] [pid 2768] [remote 172.31.8.233:0] Traceback (most recent call last):
+[Thu Apr 23 12:17:56.731388 2015] [:error] [pid 2768] [remote 172.31.8.233:0]   File "/opt/python/current/app/wactor/wsgi.py", line 13, in <module>
+[Thu Apr 23 12:17:56.731444 2015] [:error] [pid 2768] [remote 172.31.8.233:0]     from django.core.wsgi import get_wsgi_application
+[Thu Apr 23 12:17:56.731480 2015] [:error] [pid 2768] [remote 172.31.8.233:0] ImportError: No module named django.core.wsgi
+[Thu Apr 23 12:18:00.301184 2015] [:error] [pid 2768] [remote 172.31.8.233:0] mod_wsgi (pid=2768): Target WSGI script '/opt/python/current/app/wactor/wsgi.py' cannot be loaded as Python module.
+[Thu Apr 23 12:18:00.301288 2015] [:error] [pid 2768] [remote 172.31.8.233:0] mod_wsgi (pid=2768): Exception occurred processing WSGI script '/opt/python/current/app/wactor/wsgi.py'.
+[Thu Apr 23 12:18:00.301327 2015] [:error] [pid 2768] [remote 172.31.8.233:0] Traceback (most recent call last):
+[Thu Apr 23 12:18:00.301367 2015] [:error] [pid 2768] [remote 172.31.8.233:0]   File "/opt/python/current/app/wactor/wsgi.py", line 13, in <module>
+[Thu Apr 23 12:18:00.301422 2015] [:error] [pid 2768] [remote 172.31.8.233:0]     from django.core.wsgi import get_wsgi_application
+[Thu Apr 23 12:18:00.301462 2015] [:error] [pid 2768] [remote 172.31.8.233:0] ImportError: No module named django.core.wsgi
+[Thu Apr 23 12:21:26.281115 2015] [:error] [pid 2768] [remote 172.31.28.124:0] mod_wsgi (pid=2768): Target WSGI script '/opt/python/current/app/wactor/wsgi.py' cannot be loaded as Python module.
+[Thu Apr 23 12:21:26.281163 2015] [:error] [pid 2768] [remote 172.31.28.124:0] mod_wsgi (pid=2768): Exception occurred processing WSGI script '/opt/python/current/app/wactor/wsgi.py'.
+[Thu Apr 23 12:21:26.281229 2015] [:error] [pid 2768] [remote 172.31.28.124:0] Traceback (most recent call last):
+[Thu Apr 23 12:21:26.281274 2015] [:error] [pid 2768] [remote 172.31.28.124:0]   File "/opt/python/current/app/wactor/wsgi.py", line 13, in <module>
+[Thu Apr 23 12:21:26.281328 2015] [:error] [pid 2768] [remote 172.31.28.124:0]     from django.core.wsgi import get_wsgi_application
+[Thu Apr 23 12:21:26.281365 2015] [:error] [pid 2768] [remote 172.31.28.124:0] ImportError: No module named django.core.wsgi
+[Thu Apr 23 12:21:29.712227 2015] [:error] [pid 2768] [remote 172.31.28.124:0] mod_wsgi (pid=2768): Target WSGI script '/opt/python/current/app/wactor/wsgi.py' cannot be loaded as Python module.
+[Thu Apr 23 12:21:29.712278 2015] [:error] [pid 2768] [remote 172.31.28.124:0] mod_wsgi (pid=2768): Exception occurred processing WSGI script '/opt/python/current/app/wactor/wsgi.py'.
+[Thu Apr 23 12:21:29.712314 2015] [:error] [pid 2768] [remote 172.31.28.124:0] Traceback (most recent call last):
+[Thu Apr 23 12:21:29.712357 2015] [:error] [pid 2768] [remote 172.31.28.124:0]   File "/opt/python/current/app/wactor/wsgi.py", line 13, in <module>
+[Thu Apr 23 12:21:29.712412 2015] [:error] [pid 2768] [remote 172.31.28.124:0]     from django.core.wsgi import get_wsgi_application
+[Thu Apr 23 12:21:29.712449 2015] [:error] [pid 2768] [remote 172.31.28.124:0] ImportError: No module named django.core.wsgi
+[Thu Apr 23 12:21:40.499531 2015] [:error] [pid 2768] [remote 172.31.28.124:0] mod_wsgi (pid=2768): Target WSGI script '/opt/python/current/app/wactor/wsgi.py' cannot be loaded as Python module.
+[Thu Apr 23 12:21:40.499584 2015] [:error] [pid 2768] [remote 172.31.28.124:0] mod_wsgi (pid=2768): Exception occurred processing WSGI script '/opt/python/current/app/wactor/wsgi.py'.
+[Thu Apr 23 12:21:40.499621 2015] [:error] [pid 2768] [remote 172.31.28.124:0] Traceback (most recent call last):
+[Thu Apr 23 12:21:40.499662 2015] [:error] [pid 2768] [remote 172.31.28.124:0]   File "/opt/python/current/app/wactor/wsgi.py", line 13, in <module>
+[Thu Apr 23 12:21:40.499716 2015] [:error] [pid 2768] [remote 172.31.28.124:0]     from django.core.wsgi import get_wsgi_application
+[Thu Apr 23 12:21:40.499753 2015] [:error] [pid 2768] [remote 172.31.28.124:0] ImportError: No module named django.core.wsgi
+[Thu Apr 23 12:21:41.957465 2015] [:error] [pid 2768] [remote 172.31.28.124:0] mod_wsgi (pid=2768): Target WSGI script '/opt/python/current/app/wactor/wsgi.py' cannot be loaded as Python module.
+[Thu Apr 23 12:21:41.957524 2015] [:error] [pid 2768] [remote 172.31.28.124:0] mod_wsgi (pid=2768): Exception occurred processing WSGI script '/opt/python/current/app/wactor/wsgi.py'.
+[Thu Apr 23 12:21:41.957569 2015] [:error] [pid 2768] [remote 172.31.28.124:0] Traceback (most recent call last):
+[Thu Apr 23 12:21:41.957611 2015] [:error] [pid 2768] [remote 172.31.28.124:0]   File "/opt/python/current/app/wactor/wsgi.py", line 13, in <module>
+[Thu Apr 23 12:21:41.957694 2015] [:error] [pid 2768] [remote 172.31.28.124:0]     from django.core.wsgi import get_wsgi_application
+[Thu Apr 23 12:21:41.957733 2015] [:error] [pid 2768] [remote 172.31.28.124:0] ImportError: No module named django.core.wsgi
+
+
+
+-------------------------------------
+/opt/python/log/supervisord.log
+-------------------------------------
+2015-04-23 11:07:07,133 CRIT Supervisor running as root (no user in config file)
+2015-04-23 11:07:07,162 INFO RPC interface 'supervisor' initialized
+2015-04-23 11:07:07,162 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2015-04-23 11:07:07,163 INFO supervisord started with pid 1463
+2015-04-23 11:07:08,169 INFO spawned: 'httpd' with pid 1543
+2015-04-23 11:07:09,172 INFO success: httpd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2015-04-23 11:07:44,246 INFO stopped: httpd (exit status 0)
+2015-04-23 11:07:45,258 INFO spawned: 'httpd' with pid 1685
+2015-04-23 11:07:46,328 INFO success: httpd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2015-04-23 11:32:43,147 INFO stopped: httpd (exit status 0)
+2015-04-23 11:32:44,164 INFO spawned: 'httpd' with pid 2092
+2015-04-23 11:32:45,229 INFO success: httpd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2015-04-23 11:44:18,324 INFO stopped: httpd (exit status 0)
+2015-04-23 11:44:19,336 INFO spawned: 'httpd' with pid 2335
+2015-04-23 11:44:20,406 INFO success: httpd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2015-04-23 12:14:39,088 INFO stopped: httpd (exit status 0)
+2015-04-23 12:14:40,100 INFO spawned: 'httpd' with pid 2767
+2015-04-23 12:14:41,169 INFO success: httpd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+
+
+
+-------------------------------------
+/var/log/httpd/access_log
+-------------------------------------
+127.0.0.1 - - [23/Apr/2015:11:07:48 +0000] "GET / HTTP/1.1" 404 198 "-" "Python-urllib/2.7"
+172.31.28.124 - - [23/Apr/2015:11:14:05 +0000] "GET /manager/html HTTP/1.1" 404 210 "-" "Mozilla/4.0 (compatible; MSIE 9.0; Windows NT 6.1)"
+172.31.28.124 - - [23/Apr/2015:11:25:01 +0000] "GET / HTTP/1.1" 404 198 "-" "-"
+172.31.28.124 - - [23/Apr/2015:11:27:35 +0000] "GET /mh/520b475a5f1c1ecc42000000/20fe2f53-daa7-48aa-bc9d-5b9e279e5ff0/520b475a5f1c1ecc42000000/default/media/css/style.css HTTP/1.1" 404 315 "-" "Mozilla/4.0 (compatible;)"
+172.31.8.233 - - [23/Apr/2015:11:31:11 +0000] "GET / HTTP/1.1" 404 198 "-" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36"
+172.31.8.233 - - [23/Apr/2015:11:31:13 +0000] "GET /favicon.ico HTTP/1.1" 404 209 "http://ebstest-dev3.elasticbeanstalk.com/" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36"
+::1 - - [23/Apr/2015:11:32:18 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.12 (Amazon) mod_wsgi/3.5 Python/2.7.9 (internal dummy connection)"
+::1 - - [23/Apr/2015:11:32:39 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.12 (Amazon) mod_wsgi/3.5 Python/2.7.9 (internal dummy connection)"
+127.0.0.1 - - [23/Apr/2015:11:32:46 +0000] "GET / HTTP/1.1" 404 198 "-" "Python-urllib/2.7"
+127.0.0.1 - - [23/Apr/2015:11:44:22 +0000] "GET / HTTP/1.1" 404 198 "-" "Python-urllib/2.7"
+127.0.0.1 - - [23/Apr/2015:12:14:42 +0000] "GET / HTTP/1.1" 500 527 "-" "Python-urllib/2.7"
+172.31.8.233 - - [23/Apr/2015:12:17:39 +0000] "GET / HTTP/1.1" 500 527 "-" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36"
+172.31.8.233 - - [23/Apr/2015:12:17:56 +0000] "GET / HTTP/1.1" 500 527 "-" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36"
+172.31.8.233 - - [23/Apr/2015:12:18:00 +0000] "GET / HTTP/1.1" 500 527 "-" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36"
+::1 - - [23/Apr/2015:12:18:57 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.12 (Amazon) mod_wsgi/3.5 Python/2.7.9 (internal dummy connection)"
+::1 - - [23/Apr/2015:12:19:00 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.12 (Amazon) mod_wsgi/3.5 Python/2.7.9 (internal dummy connection)"
+::1 - - [23/Apr/2015:12:19:01 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.12 (Amazon) mod_wsgi/3.5 Python/2.7.9 (internal dummy connection)"
+::1 - - [23/Apr/2015:12:19:02 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.12 (Amazon) mod_wsgi/3.5 Python/2.7.9 (internal dummy connection)"
+::1 - - [23/Apr/2015:12:19:18 +0000] "OPTIONS * HTTP/1.0" 200 - "-" "Apache/2.4.12 (Amazon) mod_wsgi/3.5 Python/2.7.9 (internal dummy connection)"
+172.31.28.124 - - [23/Apr/2015:12:21:26 +0000] "GET / HTTP/1.1" 500 527 "-" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36"
+172.31.28.124 - - [23/Apr/2015:12:21:29 +0000] "GET /favicon.ico HTTP/1.1" 500 527 "http://ebstest-dev3.elasticbeanstalk.com/" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36"
+172.31.28.124 - - [23/Apr/2015:12:21:40 +0000] "GET / HTTP/1.1" 500 527 "-" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36"
+172.31.28.124 - - [23/Apr/2015:12:21:41 +0000] "GET /favicon.ico HTTP/1.1" 500 527 "http://ebstest-dev3.elasticbeanstalk.com/" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36"
+
+
+
+-------------------------------------
+/var/log/eb-activity.log
+-------------------------------------
+[2015-04-23T12:14:29.822Z] INFO  [2629]  - [CMD-AppDeploy/AppDeployStage0/InfraWriteApp2/Infra-WriteApplication2/Infra-WriteApplication2] : Completed activity.
+[2015-04-23T12:14:29.822Z] INFO  [2629]  - [CMD-AppDeploy/AppDeployStage0/InfraWriteApp2/Infra-WriteApplication2] : Completed activity.
+[2015-04-23T12:14:29.822Z] INFO  [2629]  - [CMD-AppDeploy/AppDeployStage0/InfraWriteApp2/Infra-WriteApplication2] : Starting activity...
+[2015-04-23T12:14:29.822Z] INFO  [2629]  - [CMD-AppDeploy/AppDeployStage0/InfraWriteApp2/Infra-WriteApplication2/Command 01downloadVersion] : Starting activity...
+[2015-04-23T12:14:29.822Z] INFO  [2629]  - [CMD-AppDeploy/AppDeployStage0/InfraWriteApp2/Infra-WriteApplication2/Command 01downloadVersion] : Completed activity.
+[2015-04-23T12:14:29.823Z] INFO  [2629]  - [CMD-AppDeploy/AppDeployStage0/InfraWriteApp2/Infra-WriteApplication2/Command 02deleteVersionDownloadScriptFile] : Starting activity...
+[2015-04-23T12:14:29.823Z] INFO  [2629]  - [CMD-AppDeploy/AppDeployStage0/InfraWriteApp2/Infra-WriteApplication2/Command 02deleteVersionDownloadScriptFile] : Completed activity.
+[2015-04-23T12:14:29.823Z] INFO  [2629]  - [CMD-AppDeploy/AppDeployStage0/InfraWriteApp2/Infra-WriteApplication2] : Completed activity.
+[2015-04-23T12:14:29.823Z] INFO  [2629]  - [CMD-AppDeploy/AppDeployStage0/InfraWriteApp2] : Completed activity.
+[2015-04-23T12:14:29.823Z] INFO  [2629]  - [CMD-AppDeploy/AppDeployStage0/EbExtensionPreBuild] : Starting activity...
+[2015-04-23T12:14:30.341Z] INFO  [2629]  - [CMD-AppDeploy/AppDeployStage0/EbExtensionPreBuild/Infra-EmbeddedPreBuild] : Starting activity...
+[2015-04-23T12:14:30.341Z] INFO  [2629]  - [CMD-AppDeploy/AppDeployStage0/EbExtensionPreBuild/Infra-EmbeddedPreBuild] : Completed activity.
+[2015-04-23T12:14:30.341Z] INFO  [2629]  - [CMD-AppDeploy/AppDeployStage0/EbExtensionPreBuild] : Completed activity.
+[2015-04-23T12:14:30.341Z] INFO  [2629]  - [CMD-AppDeploy/AppDeployStage0/AppDeployPreHook] : Starting activity...
+[2015-04-23T12:14:30.342Z] INFO  [2629]  - [CMD-AppDeploy/AppDeployStage0/AppDeployPreHook/01new.py] : Starting activity...
+[2015-04-23T12:14:30.971Z] INFO  [2629]  - [CMD-AppDeploy/AppDeployStage0/AppDeployPreHook/01new.py] : Completed activity.
+[2015-04-23T12:14:30.971Z] INFO  [2629]  - [CMD-AppDeploy/AppDeployStage0/AppDeployPreHook/02unzip.py] : Starting activity...
+[2015-04-23T12:14:31.628Z] INFO  [2629]  - [CMD-AppDeploy/AppDeployStage0/AppDeployPreHook/02unzip.py] : Completed activity. Result:
+  Archive:  /opt/elasticbeanstalk/deploy/appsource/source_bundle
+  96d762a8d85f5d743616fa0b989c0f52a3b4155b
+     creating: /opt/python/ondeck/app/.ebextensions/
+    inflating: /opt/python/ondeck/app/.ebextensions/wactor.config  
+    inflating: /opt/python/ondeck/app/.gitattributes  
+    inflating: /opt/python/ondeck/app/.gitignore  
+    inflating: /opt/python/ondeck/app/abc.text  
+    inflating: /opt/python/ondeck/app/manage.py  
+     creating: /opt/python/ondeck/app/templates/
+    inflating: /opt/python/ondeck/app/templates/index.html  
+     creating: /opt/python/ondeck/app/wactor/
+   extracting: /opt/python/ondeck/app/wactor/__init__.py  
+    inflating: /opt/python/ondeck/app/wactor/__init__.pyc  
+   extracting: /opt/python/ondeck/app/wactor/models.py  
+    inflating: /opt/python/ondeck/app/wactor/settings.py  
+    inflating: /opt/python/ondeck/app/wactor/settings.pyc  
+    inflating: /opt/python/ondeck/app/wactor/urls.py  
+    inflating: /opt/python/ondeck/app/wactor/urls.pyc  
+    inflating: /opt/python/ondeck/app/wactor/views.py  
+    inflating: /opt/python/ondeck/app/wactor/views.pyc  
+    inflating: /opt/python/ondeck/app/wactor/wsgi.py  
+    inflating: /opt/python/ondeck/app/wactor/wsgi.pyc  
+[2015-04-23T12:14:31.628Z] INFO  [2629]  - [CMD-AppDeploy/AppDeployStage0/AppDeployPreHook/03deploy.py] : Starting activity...
+[2015-04-23T12:14:34.945Z] INFO  [2629]  - [CMD-AppDeploy/AppDeployStage0/AppDeployPreHook/03deploy.py] : Completed activity. Result:
+  Already using interpreter /usr/bin/python2.7
+  New python executable in /opt/python/run/venv/bin/python2.7
+  Not overwriting existing python script /opt/python/run/venv/bin/python (you must use /opt/python/run/venv/bin/python2.7)
+  Installing setuptools, pip...done.
+[2015-04-23T12:14:34.945Z] INFO  [2629]  - [CMD-AppDeploy/AppDeployStage0/AppDeployPreHook/04configen.py] : Starting activity...
+[2015-04-23T12:14:37.538Z] INFO  [2629]  - [CMD-AppDeploy/AppDeployStage0/AppDeployPreHook/04configen.py] : Completed activity.
+[2015-04-23T12:14:37.538Z] INFO  [2629]  - [CMD-AppDeploy/AppDeployStage0/AppDeployPreHook] : Completed activity. Result:
+  Successfully execute hooks in directory /opt/elasticbeanstalk/hooks/appdeploy/pre.
+[2015-04-23T12:14:37.538Z] INFO  [2629]  - [CMD-AppDeploy/AppDeployStage0/EbExtensionPostBuild] : Starting activity...
+[2015-04-23T12:14:38.002Z] INFO  [2629]  - [CMD-AppDeploy/AppDeployStage0/EbExtensionPostBuild/Infra-EmbeddedPostBuild] : Starting activity...
+[2015-04-23T12:14:38.003Z] INFO  [2629]  - [CMD-AppDeploy/AppDeployStage0/EbExtensionPostBuild/Infra-EmbeddedPostBuild] : Completed activity.
+[2015-04-23T12:14:38.003Z] INFO  [2629]  - [CMD-AppDeploy/AppDeployStage0/EbExtensionPostBuild] : Completed activity.
+[2015-04-23T12:14:38.003Z] INFO  [2629]  - [CMD-AppDeploy/AppDeployStage0/InfraCleanEbextension] : Starting activity...
+[2015-04-23T12:14:38.006Z] INFO  [2629]  - [CMD-AppDeploy/AppDeployStage0/InfraCleanEbextension] : Completed activity. Result:
+  Cleaned ebextensions subdirectories from /opt/python/ondeck/app.
+[2015-04-23T12:14:38.006Z] INFO  [2629]  - [CMD-AppDeploy/AppDeployStage0] : Completed activity. Result:
+  Command CMD-AppDeploy stage 0 completed.
+[2015-04-23T12:14:38.007Z] INFO  [2629]  - [CMD-AppDeploy/AppDeployStage1] : Starting activity...
+[2015-04-23T12:14:38.007Z] INFO  [2629]  - [CMD-AppDeploy/AppDeployStage1/AppDeployEnactHook] : Starting activity...
+[2015-04-23T12:14:38.007Z] INFO  [2629]  - [CMD-AppDeploy/AppDeployStage1/AppDeployEnactHook/01flip.py] : Starting activity...
+[2015-04-23T12:14:42.918Z] INFO  [2629]  - [CMD-AppDeploy/AppDeployStage1/AppDeployEnactHook/01flip.py] : Completed activity. Result:
+  httpd: stopped
+  httpd: started
+  httpd                            RUNNING   pid 2767, uptime 0:00:02
+[2015-04-23T12:14:42.919Z] INFO  [2629]  - [CMD-AppDeploy/AppDeployStage1/AppDeployEnactHook] : Completed activity. Result:
+  Successfully execute hooks in directory /opt/elasticbeanstalk/hooks/appdeploy/enact.
+[2015-04-23T12:14:42.919Z] INFO  [2629]  - [CMD-AppDeploy/AppDeployStage1/AppDeployPostHook] : Starting activity...
+[2015-04-23T12:14:42.919Z] INFO  [2629]  - [CMD-AppDeploy/AppDeployStage1/AppDeployPostHook] : Completed activity. Result:
+  Successfully execute hooks in directory /opt/elasticbeanstalk/hooks/appdeploy/post.
+[2015-04-23T12:14:42.919Z] INFO  [2629]  - [CMD-AppDeploy/AppDeployStage1] : Completed activity. Result:
+  Command CMD-AppDeploy stage 1 completed.
+[2015-04-23T12:14:42.920Z] INFO  [2629]  - [CMD-AppDeploy/AddonsAfter] : Starting activity...
+[2015-04-23T12:14:42.920Z] INFO  [2629]  - [CMD-AppDeploy/AddonsAfter/ConfigLogRotation] : Starting activity...
+[2015-04-23T12:14:42.920Z] INFO  [2629]  - [CMD-AppDeploy/AddonsAfter/ConfigLogRotation/10-config.sh] : Starting activity...
+[2015-04-23T12:14:43.113Z] INFO  [2629]  - [CMD-AppDeploy/AddonsAfter/ConfigLogRotation/10-config.sh] : Completed activity. Result:
+  Disabled forced hourly log rotation.
+[2015-04-23T12:14:43.113Z] INFO  [2629]  - [CMD-AppDeploy/AddonsAfter/ConfigLogRotation] : Completed activity. Result:
+  Successfully execute hooks in directory /opt/elasticbeanstalk/addons/logpublish/hooks/config.
+[2015-04-23T12:14:43.113Z] INFO  [2629]  - [CMD-AppDeploy/AddonsAfter] : Completed activity.
+[2015-04-23T12:14:43.114Z] INFO  [2629]  - [CMD-AppDeploy] : Completed activity. Result:
+  Command CMD-AppDeploy succeeded.
+[2015-04-23T12:18:34.235Z] INFO  [2835]  - [CMD-TailLogs] : Starting activity...
+[2015-04-23T12:18:34.650Z] INFO  [2835]  - [CMD-TailLogs/AddonsBefore] : Starting activity...
+[2015-04-23T12:18:34.650Z] INFO  [2835]  - [CMD-TailLogs/AddonsBefore] : Completed activity.
+[2015-04-23T12:18:34.651Z] INFO  [2835]  - [CMD-TailLogs/TailLogs] : Starting activity...
+[2015-04-23T12:18:34.651Z] INFO  [2835]  - [CMD-TailLogs/TailLogs/TailLogs] : Starting activity...
+[2015-04-23T12:18:35.035Z] INFO  [2835]  - [CMD-TailLogs/TailLogs/TailLogs] : Completed activity.
+[2015-04-23T12:18:35.036Z] INFO  [2835]  - [CMD-TailLogs/TailLogs] : Completed activity. Result:
+  Command CMD-TailLogs stage 0 completed.
+[2015-04-23T12:18:35.036Z] INFO  [2835]  - [CMD-TailLogs/AddonsAfter] : Starting activity...
+[2015-04-23T12:18:35.036Z] INFO  [2835]  - [CMD-TailLogs/AddonsAfter] : Completed activity.
+[2015-04-23T12:18:35.036Z] INFO  [2835]  - [CMD-TailLogs] : Completed activity. Result:
+  Command CMD-TailLogs succeeded.
+[2015-04-23T12:22:17.389Z] INFO  [2883]  - [CMD-TailLogs] : Starting activity...
+[2015-04-23T12:22:17.802Z] INFO  [2883]  - [CMD-TailLogs/AddonsBefore] : Starting activity...
+[2015-04-23T12:22:17.802Z] INFO  [2883]  - [CMD-TailLogs/AddonsBefore] : Completed activity.
+[2015-04-23T12:22:17.803Z] INFO  [2883]  - [CMD-TailLogs/TailLogs] : Starting activity...
+[2015-04-23T12:22:17.803Z] INFO  [2883]  - [CMD-TailLogs/TailLogs/TailLogs] : Starting activity...
+
+
+
+-------------------------------------
+/var/log/eb-commandprocessor.log
+-------------------------------------
+[2015-04-23T11:44:22.337Z] INFO  [2196]  : Command processor returning results: 
+{"status":"SUCCESS","api_version":"1.0","results":[{"status":"SUCCESS","msg":"","returncode":0,"events":[{"msg":"Your WSGIPath refers to a file that does not exist.","severity":"ERROR","timestamp":1429789456}]}]}
+[2015-04-23T12:14:27.973Z] DEBUG [2629]  : Reading config file: /etc/elasticbeanstalk/.aws-eb-stack.properties
+[2015-04-23T12:14:27.974Z] INFO  [2629]  : Received command CMD-AppDeploy: #<ElasticBeanstalk::CommandRequest:0x007f2e0c66aad0>
+[2015-04-23T12:14:27.974Z] DEBUG [2629]  : Checking if the command processor should execute...
+[2015-04-23T12:14:28.001Z] DEBUG [2629]  : Checking whether the command is applicable to instance (i-93c15265)..
+[2015-04-23T12:14:28.002Z] INFO  [2629]  : Command is applicable to this instance (i-93c15265)..
+[2015-04-23T12:14:28.002Z] DEBUG [2629]  : Checking if the received command stage is valid..
+[2015-04-23T12:14:28.002Z] INFO  [2629]  : No stage_num in command. Valid stage..
+[2015-04-23T12:14:28.002Z] INFO  [2629]  : Command processor should execute command.
+[2015-04-23T12:14:28.002Z] DEBUG [2629]  : Storing current stage..
+[2015-04-23T12:14:28.002Z] DEBUG [2629]  : Stage_num does not exist. Not saving null stage. Returning..
+[2015-04-23T12:14:28.003Z] INFO  [2629]  : Executing command: CMD-AppDeploy...
+[2015-04-23T12:14:28.003Z] DEBUG [2629]  : Reading config file: /etc/elasticbeanstalk/.aws-eb-stack.properties
+[2015-04-23T12:14:28.003Z] DEBUG [2629]  : Refreshing metadata..
+[2015-04-23T12:14:28.460Z] DEBUG [2629]  : Refreshed environment metadata.
+[2015-04-23T12:14:28.460Z] DEBUG [2629]  : Retrieving metadata for key: AWS::ElasticBeanstalk::Ext||_ContainerConfigFileContent||commands..
+[2015-04-23T12:14:28.465Z] DEBUG [2629]  : Retrieving metadata for key: AWS::ElasticBeanstalk::Ext||_API||_Commands..
+[2015-04-23T12:14:28.466Z] INFO  [2629]  : Found enabled addons: ["logpublish"].
+[2015-04-23T12:14:28.468Z] INFO  [2629]  : Updating Command definition of addon logpublish.
+[2015-04-23T12:14:28.468Z] DEBUG [2629]  : Loaded definition of Command CMD-AppDeploy.
+[2015-04-23T12:14:28.468Z] INFO  [2629]  : Executing command CMD-AppDeploy activities...
+[2015-04-23T12:14:28.468Z] DEBUG [2629]  : Setting environment variables..
+[2015-04-23T12:14:28.468Z] INFO  [2629]  : Running AddonsBefore for command CMD-AppDeploy...
+[2015-04-23T12:14:28.469Z] DEBUG [2629]  : Running stages of Command CMD-AppDeploy from stage 0 to stage 1...
+[2015-04-23T12:14:28.469Z] INFO  [2629]  : Running stage 0 of command CMD-AppDeploy...
+[2015-04-23T12:14:28.469Z] INFO  [2629]  : Running leader election...
+[2015-04-23T12:14:28.869Z] INFO  [2629]  : Instance is Leader.
+[2015-04-23T12:14:28.870Z] DEBUG [2629]  : Loaded 7 actions for stage 0.
+[2015-04-23T12:14:28.870Z] INFO  [2629]  : Running 1 of 7 actions: InfraWriteConfig...
+[2015-04-23T12:14:28.876Z] INFO  [2629]  : Running 2 of 7 actions: InfraWriteApp1...
+[2015-04-23T12:14:28.877Z] INFO  [2629]  : Running 3 of 7 actions: InfraWriteApp2...
+[2015-04-23T12:14:29.823Z] INFO  [2629]  : Running 4 of 7 actions: EbExtensionPreBuild...
+[2015-04-23T12:14:30.341Z] INFO  [2629]  : Running 5 of 7 actions: AppDeployPreHook...
+[2015-04-23T12:14:37.538Z] INFO  [2629]  : Running 6 of 7 actions: EbExtensionPostBuild...
+[2015-04-23T12:14:38.003Z] INFO  [2629]  : Running 7 of 7 actions: InfraCleanEbextension...
+[2015-04-23T12:14:38.007Z] INFO  [2629]  : Running stage 1 of command CMD-AppDeploy...
+[2015-04-23T12:14:38.007Z] DEBUG [2629]  : Loaded 2 actions for stage 1.
+[2015-04-23T12:14:38.007Z] INFO  [2629]  : Running 1 of 2 actions: AppDeployEnactHook...
+[2015-04-23T12:14:42.919Z] INFO  [2629]  : Running 2 of 2 actions: AppDeployPostHook...
+[2015-04-23T12:14:42.919Z] INFO  [2629]  : Running AddonsAfter for command CMD-AppDeploy...
+[2015-04-23T12:14:43.114Z] INFO  [2629]  : Command CMD-AppDeploy succeeded!
+[2015-04-23T12:14:43.114Z] INFO  [2629]  : Command processor returning results: 
+{"status":"SUCCESS","api_version":"1.0","results":[{"status":"SUCCESS","msg":"","returncode":0,"events":[]}]}
+[2015-04-23T12:18:34.232Z] DEBUG [2835]  : Reading config file: /etc/elasticbeanstalk/.aws-eb-stack.properties
+[2015-04-23T12:18:34.233Z] INFO  [2835]  : Received command CMD-TailLogs: #<ElasticBeanstalk::CommandRequest:0x007f91b29eabb0>
+[2015-04-23T12:18:34.233Z] DEBUG [2835]  : Checking if the command processor should execute...
+[2015-04-23T12:18:34.234Z] DEBUG [2835]  : Checking whether the command is applicable to instance (i-93c15265)..
+[2015-04-23T12:18:34.234Z] INFO  [2835]  : Command is applicable to this instance (i-93c15265)..
+[2015-04-23T12:18:34.234Z] DEBUG [2835]  : Checking if the received command stage is valid..
+[2015-04-23T12:18:34.234Z] INFO  [2835]  : No stage_num in command. Valid stage..
+[2015-04-23T12:18:34.235Z] INFO  [2835]  : Command processor should execute command.
+[2015-04-23T12:18:34.235Z] DEBUG [2835]  : Storing current stage..
+[2015-04-23T12:18:34.235Z] DEBUG [2835]  : Stage_num does not exist. Not saving null stage. Returning..
+[2015-04-23T12:18:34.235Z] INFO  [2835]  : Executing command: CMD-TailLogs...
+[2015-04-23T12:18:34.235Z] DEBUG [2835]  : Reading config file: /etc/elasticbeanstalk/.aws-eb-stack.properties
+[2015-04-23T12:18:34.236Z] DEBUG [2835]  : Refreshing metadata..
+[2015-04-23T12:18:34.644Z] DEBUG [2835]  : Refreshed environment metadata.
+[2015-04-23T12:18:34.645Z] DEBUG [2835]  : Retrieving metadata for key: AWS::ElasticBeanstalk::Ext||_ContainerConfigFileContent||commands..
+[2015-04-23T12:18:34.646Z] DEBUG [2835]  : Retrieving metadata for key: AWS::ElasticBeanstalk::Ext||_API||_Commands..
+[2015-04-23T12:18:34.647Z] INFO  [2835]  : Found enabled addons: ["logpublish"].
+[2015-04-23T12:18:34.650Z] INFO  [2835]  : Updating Command definition of addon logpublish.
+[2015-04-23T12:18:34.650Z] DEBUG [2835]  : Loaded definition of Command CMD-TailLogs.
+[2015-04-23T12:18:34.650Z] INFO  [2835]  : Executing command CMD-TailLogs activities...
+[2015-04-23T12:18:34.650Z] DEBUG [2835]  : Setting environment variables..
+[2015-04-23T12:18:34.650Z] INFO  [2835]  : Running AddonsBefore for command CMD-TailLogs...
+[2015-04-23T12:18:34.650Z] DEBUG [2835]  : Running stages of Command CMD-TailLogs from stage 0 to stage 0...
+[2015-04-23T12:18:34.650Z] INFO  [2835]  : Running stage 0 of command CMD-TailLogs...
+[2015-04-23T12:18:34.651Z] DEBUG [2835]  : Loaded 1 actions for stage 0.
+[2015-04-23T12:18:34.651Z] INFO  [2835]  : Running 1 of 1 actions: TailLogs...
+[2015-04-23T12:18:35.036Z] INFO  [2835]  : Running AddonsAfter for command CMD-TailLogs...
+[2015-04-23T12:18:35.036Z] INFO  [2835]  : Command CMD-TailLogs succeeded!
+[2015-04-23T12:18:35.038Z] INFO  [2835]  : Command processor returning results: 
+{"status":"SUCCESS","api_version":"1.0","results":[{"status":"SUCCESS","msg":"","returncode":0,"events":[{"msg":"[Instance: i-93c15265] Successfully finished tailing 7 log(s)","severity":"INFO","timestamp":1429791515037}]}]}
+[2015-04-23T12:22:17.386Z] DEBUG [2883]  : Reading config file: /etc/elasticbeanstalk/.aws-eb-stack.properties
+[2015-04-23T12:22:17.386Z] INFO  [2883]  : Received command CMD-TailLogs: #<ElasticBeanstalk::CommandRequest:0x007fa3afeb2af8>
+[2015-04-23T12:22:17.386Z] DEBUG [2883]  : Checking if the command processor should execute...
+[2015-04-23T12:22:17.388Z] DEBUG [2883]  : Checking whether the command is applicable to instance (i-93c15265)..
+[2015-04-23T12:22:17.388Z] INFO  [2883]  : Command is applicable to this instance (i-93c15265)..
+[2015-04-23T12:22:17.388Z] DEBUG [2883]  : Checking if the received command stage is valid..
+[2015-04-23T12:22:17.388Z] INFO  [2883]  : No stage_num in command. Valid stage..
+[2015-04-23T12:22:17.388Z] INFO  [2883]  : Command processor should execute command.
+[2015-04-23T12:22:17.388Z] DEBUG [2883]  : Storing current stage..
+[2015-04-23T12:22:17.388Z] DEBUG [2883]  : Stage_num does not exist. Not saving null stage. Returning..
+[2015-04-23T12:22:17.389Z] INFO  [2883]  : Executing command: CMD-TailLogs...
+[2015-04-23T12:22:17.389Z] DEBUG [2883]  : Reading config file: /etc/elasticbeanstalk/.aws-eb-stack.properties
+[2015-04-23T12:22:17.389Z] DEBUG [2883]  : Refreshing metadata..
+[2015-04-23T12:22:17.797Z] DEBUG [2883]  : Refreshed environment metadata.
+[2015-04-23T12:22:17.797Z] DEBUG [2883]  : Retrieving metadata for key: AWS::ElasticBeanstalk::Ext||_ContainerConfigFileContent||commands..
+[2015-04-23T12:22:17.798Z] DEBUG [2883]  : Retrieving metadata for key: AWS::ElasticBeanstalk::Ext||_API||_Commands..
+[2015-04-23T12:22:17.799Z] INFO  [2883]  : Found enabled addons: ["logpublish"].
+[2015-04-23T12:22:17.802Z] INFO  [2883]  : Updating Command definition of addon logpublish.
+[2015-04-23T12:22:17.802Z] DEBUG [2883]  : Loaded definition of Command CMD-TailLogs.
+[2015-04-23T12:22:17.802Z] INFO  [2883]  : Executing command CMD-TailLogs activities...
+[2015-04-23T12:22:17.802Z] DEBUG [2883]  : Setting environment variables..
+[2015-04-23T12:22:17.802Z] INFO  [2883]  : Running AddonsBefore for command CMD-TailLogs...
+[2015-04-23T12:22:17.803Z] DEBUG [2883]  : Running stages of Command CMD-TailLogs from stage 0 to stage 0...
+[2015-04-23T12:22:17.803Z] INFO  [2883]  : Running stage 0 of command CMD-TailLogs...
+[2015-04-23T12:22:17.803Z] DEBUG [2883]  : Loaded 1 actions for stage 0.
+[2015-04-23T12:22:17.803Z] INFO  [2883]  : Running 1 of 1 actions: TailLogs...
+
+
+
+
